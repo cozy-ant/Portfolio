@@ -1,0 +1,68 @@
+#about {
+  background-color: rgb(255, 255, 255);
+}
+
+.about {
+  display: inline-flex;
+  margin-top: 20px;
+  gap: 3em;
+}
+
+.about__photo img {
+  width: 300px;
+}
+.about__card {
+  margin-top: 8px;
+  padding: 15px 25px;
+  height: 125px;
+  color: white;
+  text-align: left;
+  background-color: rgb(94, 82, 82);
+  border-radius: 20px;
+}
+.about__title {
+  margin-bottom: 0.5em;
+  color: rgb(92, 179, 255);
+  font-size: var(--font-size-title);
+}
+.about__text {
+  font-size: var(--font-size-text);
+}
+.about__card h3 strong {
+  font-size: 25px;
+  color:rgb(0, 255, 234);
+}
+
+/* 모바일 */
+@media (max-width: 760px) {
+  .about {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+}
+/* 웹 */
+@media (min-width: 761px) {
+  .about__card {
+    cursor: pointer;
+    width: 350px;
+    transition: all 300ms;
+  }
+  .about__card:hover {
+    transform: scale(1.05);
+  }
+
+  .about:hover .about__card:not(:hover) {
+    transform: scale(0.9);
+  }
+
+  .about:hover .about__card:not(:hover)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);
+  }
+}

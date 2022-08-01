@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <!-- intro -->
+    <section class="intro">
+      <div class="intro__dark">
+        <div class="intro__type">
+          <div><span aria-hidden="true">🐤 </span> 병아리</div>
+          <div>개발자입니다<span class="underscore">.</span></div>
+        </div>
+      </div>
+      <div class="intro__tit"></div>
+      <div class="intro__tit--flip"></div>
+    </section>
+    <!-- header -->
+    <header class="header">
+      <h1>
+        <a class="header__homelink" href="#">
+            Home
+        </a>
+      </h1>
+      <input class="header__menu-btn" type="checkbox">
+      <nav class="header__nav">
+        <ul>
+          <li class="header__nav-item">
+            <a href="#about">About</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#lang">Skill</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#project">Project</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#update">Update</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <!-- about section -->
+      <section id="about" class="section">
+        <header class="section__header">
+          <img src="./images/section_title.png" alt="">
+          <strong class="section__tag">
+            About
+          </strong>
+        </header>
+        
+        <div class="about">
+          <div class="about__photo">
+            <img src="./images/about_photo.png" alt=""><br>
+            임시 이미지
+          </div>
+          <div class="about__content">
+            <div class="about__card">
+              <h2 class="about__title">
+                프로필
+              </h2>
+              <h3>
+                신입 개발자 <strong>박성재</strong>입니다.
+              </h3>
+              <p class="about__text">
+                생일 : 1993. 12. 09.<br>
+                E-mail : koreanant93@gmail.com
+              </p>
+            </div>
+            <div class="about__card">
+              <h2 class="about__title">
+                추구하는 직업 가치관
+              </h2><br>
+              <p class="about__text">
+                1. 근면성실 
+                2. 계획성 
+                3. 완벽성
+                4. 현명함
+              </p>
+            </div>
+          </div>
+          <div class="about__content">
+            <div class="about__card">
+              <h2 class="about__title">
+                경력
+              </h2>
+              <p class="about__text">
+                2009 ~ 2012 반여고등학교 졸업<br>
+                2014 ~ 2020 육군(병 + 부사관) 전역<br>
+                2012 ~ 2022 영산대학교(컴퓨터공학과) 졸업
+              </p>
+            </div>
+            <div class="about__card">
+              <h2 class="about__title">
+                홈페이지 소개
+              </h2>
+              <p class="about__text">
+                HTML, CSS 문법으로 제작한       포트폴리오 <br>프로젝트입니다.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- language section -->
+      <section id="lang" class="section">
+        <header class="section__header">
+          <img src="./images/section_title.png" alt="">
+          <strong class="section__tag">
+            Skill
+          </strong>
+        </header>
+        <article class="lang__logo">
+          <figure class="lang__logo-shadow">
+            <img src="./images/lang_html.svg" alt="html">
+          </figure>
+          <figure class="lang__logo-shadow">
+            <img src="./images/lang_css.svg" alt="css">
+          </figure>
+          <figure class="lang__logo-shadow">
+            <img src="./images/lang_js.svg" alt="javascript">
+          </figure>
+          <figure class="lang__logo-shadow">
+            <img src="./images/lang_react.svg" alt="react">
+          </figure>
+        </article>
+      </section>
+      <!-- project section -->
+      <section id="project" class="section">
+        <header class="section__header">
+          <img src="./images/section_title.png" alt="">
+          <strong class="section__tag">
+            Project
+          </strong>
+        </header>
+      </section>
+      <!-- Update section -->
+      <section id="update" class="section">
+        <header class="section__header">
+          <img src="./images/section_title.png" alt="">
+          <strong class="section__tag">
+            Update
+          </strong>
+        </header>
+        <div class="update__date">
+          <p> 2022 / 07 / 20 (Wed) : 기본 틀 제작</p>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="admin__github">
+        <a href="https://github.com/"><img src="./images/footer-github.png" alt="github"><p>Github</p></a>
+        
+      </div>
+      <h1 class="sr-only">Copyright</h1>
+      <p>
+        2022 Pant - All rights reserved
+      </p>
+    </footer>
+  </body>
+
+</html>

@@ -1,0 +1,48 @@
+#lang {
+  background-color: rgb(255, 228, 110);
+}
+.lang__logo {
+  position: inline-flex;
+}
+.lang__logo img {
+  width: 120px;
+  height: 120px;
+}
+.lang__logo-shadow {
+  position: relative;
+  padding: 50px;
+}
+.lang__logo-shadow::after{
+  content: '';
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: 20px;
+  width: 100px;
+  height: 10%;
+  background-color: black;
+  border-radius: 50%;
+}
+
+@keyframes logo-updown {
+  from { transform: translateY(0); }
+  to { transform: translateY(5px); }
+}
+.lang__logo img{
+  animation-name: logo-updown;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes logo-shadow {
+  from { opacity: 0.05; }
+  to { opacity: 0.2; }
+}
+.lang__logo-shadow::after {
+  animation-name: logo-shadow;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

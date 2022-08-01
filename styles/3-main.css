@@ -1,0 +1,23 @@
+.section {
+  font-family: var(--font-main);
+  padding: 70px 15px;
+  text-align: center;
+}
+
+.section__tag {
+  font-size: var(--font-size-section);
+  font-weight: bold;
+  color: black;
+}
+.section__header img {
+  width: 50px;
+  vertical-align:top;
+}
+
+@media (min-width: 761px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}

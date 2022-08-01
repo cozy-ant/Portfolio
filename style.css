@@ -1,0 +1,83 @@
+
+@import url('./styles/1-intro.css');
+@import url('./styles/2-header.css');
+@import url('./styles/3-main.css');
+@import url('./styles/4-about.css');
+@import url('./styles/5-lang.css');
+@import url('./styles/6-project.css');
+@import url('./styles/7-update.css');
+@import url('./styles/8-footer.css');
+/* main font*/
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/* title font */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+/* 변수 */
+:root {
+  --font-title: 'Black Han Sans', monospace;;
+  --font-main: 'Jua', monospace;;
+  --font-size-section: 45px;
+  --font-size-title: 30px;
+  --font-size-text: 17px;
+
+
+  --height-toolbar: 72px;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+strong, em {
+  font-weight: inherit;
+  font-style: normal;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+dl { margin: 0; }
+dd {
+  margin: 0;
+  display: inline;
+}
+
+figure { 
+  margin: 0; 
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+th { font-weight: normal; }
+
+address { font-style: inherit; }
+
+/* 접근성 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

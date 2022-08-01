@@ -1,0 +1,9 @@
+#update {
+  background-color: rgb(255, 228, 110);
+}
+.update {
+  text-align: center;
+}
+.update__date {
+  margin-top: 20px;
+}
